@@ -1,0 +1,40 @@
+Algoritmo "atividade4"
+
+Var
+morango, maca, valortotalkilo:inteiro
+valormorango, valormaca, valordacompra, valorfinal :real
+
+
+Inicio
+
+escreval("Digite a quantidade de quilos de morango que deseja comprar:")
+leia(morango)
+
+escreval("Digite a quantidade de quilos de maçã que deseja comprar:")
+leia(maca)
+
+valortotalkilo<-(morango + maca)
+
+se (morango <= 5) entao
+valormorango <- (morango*2.50)
+senao
+valormorango <- (morango*2.20)
+fimse
+
+se (maca <= 5) entao
+valormaca <- (maca*1.80)
+senao
+valormaca <- (maca*1.50)
+fimse
+
+valordacompra<- valormorango + valormaca
+
+se (valordacompra >= 25) ou  (valortotalkilo>=8) entao
+valorfinal<- valordacompra*(90/100)
+senao
+valorfinal<-valordacompra
+fimse
+
+escreval(" O valor final da compra é:", valorfinal)
+
+Fimalgoritmo
